@@ -503,6 +503,7 @@ a.button{
     div.gallerycontainer{
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         margin: 2vw 15vw;
     }
     
