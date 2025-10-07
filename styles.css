@@ -501,19 +501,21 @@ a.button{
     }
 
     div.gallerycontainer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2vw;
-        margin: 2vw 5vw;
+        display: flex;
+        flex-direction: row;
+        margin: 2vw 15vw;
     }
     
     div.gallery{
         margin: 0;
         border-radius: 1vw;
         gap: 0;
+        width: 15vw;
     }
     div.gallery p{
-        font-size: 2vw;
+        font-size: 1vw;
+        padding:0;
+        margin: 1vw
     }
 
     header h1{
@@ -535,8 +537,8 @@ a.button{
     }
 
     a.button{
-        font-size: 2vw;
-        padding: 10px 35vw;
-        margin: 0 5vw;
+        font-size: 1.4vw;
+        padding: 10px 28vw;
+        margin: 0 15vw;
     }
 }
