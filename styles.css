@@ -1,0 +1,542 @@
+/* CSS BY ARIEL STROTHER*/
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS RESET */
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END CSS RESET */
+
+/* ROOT VARIABLES */
+:root{
+    --midnight-blue: #1F2A44;
+    --olive-green: #76885B;
+    --champagne-gold: #E5C185;
+    --linen: #F8F4EC;
+    --dark-charcoal: #2B2B2B;
+    --soft-white: #FAF9F6;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+
+header{
+    background-color: var(--midnight-blue);
+    text-align: center;
+    color: var(--linen);
+    margin-bottom: 60px;
+}
+
+header p{
+    background-color: var(--midnight-blue);
+    text-align: center;
+    color: var(--linen);
+    margin-bottom: 10px;
+}
+
+
+header img{
+    width: 200px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 12vw;
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+header p{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 3.8vw;
+    padding: 4vw 0 4vw 0;
+
+}
+
+header ul{
+    font-family: 'Playfair Display', serif;
+    Background-color: var(--champagne-gold);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2vw;
+}
+
+header ul a{
+    font-family: 'Playfair Display', serif;
+    color: var(--midnight-blue);
+    text-decoration: none;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+
+body{
+    background-color: var(--linen);
+    color: var(--dark-charcoal);
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border: 0;
+    height: 2px;
+    background: var(--champagne-gold);
+    margin: 20px 30px 0;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin: 20px 0 1vw 30px;
+    font-weight: 600;
+    color: var(--midnight-blue);
+}
+
+p.paragraph{
+    font-family: 'Playfair Display', serif;
+    color: var(--dark-charcoal);
+    font-weight: 500;
+    font-size: 3vw;
+    margin: 0 30px 20px 30px;
+    line-height: 1.5;
+}
+
+.offerings{
+    display: flex;
+    flex-direction: column;
+}
+
+div.artisan, div.exclusive, div.monthly{
+    background-color: var(--olive-green);
+    color: var(--linen);
+    font-family: "Playfair Display", serif;
+    font-size: 3.2vw;
+    line-height: 5vw;
+    margin: 20px 30px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div.monthly ul{
+    list-style: disc;
+    margin-left: 20px;
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--linen);
+    margin: 20px 0 10px 0;
+}
+
+div.gallery{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    color: var(--midnight-blue);
+    background-color: var(--linen);
+    align-items: center;
+    margin: 22px;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+div.gallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 1vw 1vw 0 0;
+}
+
+div.gallery p{
+    font-size: 3vw;
+    font-weight: 500;
+    font-style: italic;
+    margin: 10px 30px 10px 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+footer{
+    background-color: var(--midnight-blue);
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: var(--soft-white);
+    padding: 60px 0 20px 0;
+    margin-top: 4vw;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+footer a{
+    color: var(--champagne-gold);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+a.button{
+    display: block;
+    background-color: var(--olive-green);
+    color: var(--linen);
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: 600;
+    padding: 2vw 32vw;
+    border-radius: 5px;
+    margin: 1vw auto;
+    width: fit-content;
+}
+
+/* MEDIA QUERY (medium) */
+
+@media (min-width: 600px){
+
+    body h2{
+        font-size: 36px;
+        margin: 2vw 0 2vw 5vw;
+    }
+
+    p.paragraph{
+        font-size: 2.6vw;
+        margin: 0 5vw;
+    }
+
+    div.offerings{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2vw;
+        margin: 1vw 2vw;
+    }
+
+    div.offerings h3{
+        line-height: 8vh;
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    div.offerings p{
+        line-height: 4vh;
+        font-size: 2.8vw;
+        margin: 0;
+        padding: 0
+    }
+
+    div.artisan, div.exclusive, div.monthly{
+        font-size: 3vw;
+        line-height: 4vh;
+        margin: 0.5vw 0.5vw;
+        padding: 3vw;
+    }
+
+    div.artisan{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    div.exclusive{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    div.monthly{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    div.gallerycontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        margin: 2vw 5vw;
+    }
+    
+    div.gallery{
+        margin: 0;
+        border-radius: 1vw;
+        gap: 0;
+    }
+    div.gallery p{
+        font-size: 2vw;
+    }
+
+    header h1{
+        font-size: 8vw;
+    }
+
+    header p{
+        font-size: 3vw;
+    }
+
+    header ul a{
+        font-size: 28px;
+    }
+
+    a.button{
+        font-size: 2vw;
+        padding: 10px 35vw;
+        margin: 0 5vw;
+    }
+}
+
+/* MEDIA QUERY (large) */
+
+@media (min-width: 900px){
+
+    body h2{
+        font-size: 36px;
+        margin: 2vw 0 1vw 5vw;
+    }
+
+    p.paragraph{
+        font-size: 2.6vw;
+        margin: 0 5vw;
+    }
+
+    div.offerings{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2vw;
+        margin: 0 2vw;
+    }
+
+    div.offerings h3{
+        line-height: 15vh;
+        font-size: 5vw;
+        margin: 0;
+    }
+
+    div.offerings p{
+        line-height: 5vh;
+        font-size: 2.8vw;
+        margin: 0;
+        padding: 0
+    }
+
+    div.artisan, div.exclusive, div.monthly{
+        font-size: 3vw;
+        line-height: 4vw;
+        margin: 0.5vw 0.5vw;
+        padding: 3vw;
+    }
+
+    div.artisan{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    div.exclusive{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    div.monthly{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    div.gallerycontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        margin: 2vw 5vw;
+    }
+    
+    div.gallery{
+        margin: 0;
+        border-radius: 1vw;
+        gap: 0;
+    }
+    div.gallery p{
+        font-size: 2vw;
+    }
+
+    header h1{
+        font-size: 8vw;
+    }
+
+    header p{
+        font-size: 3vw;
+    }
+
+    header ul a{
+        font-size: 28px;
+    }
+
+    a.button{
+        font-size: 2vw;
+        padding: 10px 35vw;
+        margin: 0 5vw;
+    }
+}
+
+/* MEDIA QUERY (xl) */
+
+@media (min-width: 1200px) {
+
+    body h2{
+        font-size: 36px;
+        font-weight: 500;
+        margin: 2vw 0 1vw 15vw;
+    }
+
+    p.paragraph{
+        font-size: 2vw;
+        margin: 0 15vw;
+    }
+
+    hr{
+        margin: 20px 15vw 0;
+    }
+
+    div.offerings{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1.5vw;
+        margin: 0 15vw;
+    }
+
+    div.offerings h3{
+        line-height: 5vh;
+        font-size: 2vw;
+        margin: 0;
+    }
+
+    div.offerings p{
+        line-height: 4vh;
+        font-size: 1.3vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.offerings ul{
+        font-size: 1.3vw;
+        line-height: 2vw;
+    }
+
+    div.artisan, div.exclusive, div.monthly{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 3vw;
+        line-height: 4vw;
+        margin: 0vw;
+        padding: 1vw;
+    }
+
+    div.artisan{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    div.exclusive{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    div.monthly{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+
+    div.gallerycontainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        margin: 2vw 5vw;
+    }
+    
+    div.gallery{
+        margin: 0;
+        border-radius: 1vw;
+        gap: 0;
+    }
+    div.gallery p{
+        font-size: 2vw;
+    }
+
+    header h1{
+        font-size: 5vw;
+    }
+
+    header p{
+        font-size: 1.4vw;
+        padding: 2vw;
+    }
+
+    header ul{
+        padding: 1vw 2vw;
+    }
+
+    header ul a{
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+
+    a.button{
+        font-size: 2vw;
+        padding: 10px 35vw;
+        margin: 0 5vw;
+    }
+}
